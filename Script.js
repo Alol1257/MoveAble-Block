@@ -5,7 +5,6 @@ block.onmousedown = function(event) {
     let shiftX = event.clientX - block.getBoundingClientRect().left;
     let shiftY = event.clientY - block.getBoundingClientRect().top;
     block.style.position = 'absolute';
-    //document.body.append(block);
   
     function moveAt(pageX, pageY) {
       block.style.left = pageX - shiftX + 'px';
